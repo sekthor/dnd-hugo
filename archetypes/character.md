@@ -5,5 +5,6 @@ draft: true
 params:
   race: ''
   class: ''
-  campaign: ''
+tags: []
+campaigns: []
 ---

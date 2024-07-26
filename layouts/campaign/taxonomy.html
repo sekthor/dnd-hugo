@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+    
+  <h2>Played Characters</h2>
+  <ul>
+  {{ range where .Pages "Params.type" "pc" }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  {{ end }}
+  </ul>
+
+  <h2>NPCs</h2>
+  <ul>
+  {{ range where .Pages "Params.type" "npc" }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  {{ end }}
+  </ul>
+
+  <h2>Sessions</h2>
+  <ul>
+  {{ range where .Pages "Params.type" "session" }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> ({{ .Date | time.Format ":date_long" }})</li>
+  {{ end }}
+  </ul>
+
+{{ end }}
