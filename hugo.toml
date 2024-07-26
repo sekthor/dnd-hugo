@@ -1,0 +1,12 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'My New Hugo Site'
+
+[taxonomies]
+  tag = 'tags'
+  campaign = 'campaigns'
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

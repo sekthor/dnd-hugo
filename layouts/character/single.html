@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+
+
+  <table>
+    <tr>
+      <td>Race</td>
+      <td>{{ .Params.Race }}</td>
+    </tr>
+    <tr>
+      <td>Class</td>
+      <td>{{ .Params.Class }}</td>
+    </tr>
+  </table>
+
+  {{ .Content }}
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
