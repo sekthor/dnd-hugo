@@ -32,6 +32,44 @@ main {
   margin: auto;
 }
 
+main img {
+  max-width: 50%;
+  margin: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+}
+
+.badges {
+  display: flex;
+  gap: .5em;
+}
+
+.badge {
+  border-radius: 1.5em;
+  padding: 0.5em 1em;
+  font-size: small;
+  background-color: maroon;
+  color: white;
+}
+
+.badge img {
+  fill: white;
+}
+
+.badgeimg {
+  display: inline;
+  height: 1.25em;
+  margin: -.25em 0em;
+}
+
 /*
 footer {
   border-top: 1px solid #222;

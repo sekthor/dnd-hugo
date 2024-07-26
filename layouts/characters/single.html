@@ -1,19 +1,18 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
 
-
-
-  <table>
-    <tr>
-      <td>Race</td>
-      <td>{{ .Params.Race }}</td>
-    </tr>
-    <tr>
-      <td>Class</td>
-      <td>{{ .Params.Class }}</td>
-    </tr>
-  </table>
+  <div class="badges">
+    <span class="badge race">
+      <img class="badgeimg" src="/img/races/{{ .Params.Race }}.svg" alt="" />
+      {{ .Params.Race }}
+    </span>
+    <span class="badge class">
+      <img class="badgeimg" src="/img/classes/{{ .Params.Class }}.svg" alt="" />
+      {{ .Params.Class }}
+    </span>
+  </div>
 
   {{ .Content }}
+
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}
