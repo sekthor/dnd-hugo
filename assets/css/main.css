@@ -30,6 +30,7 @@ header a {
 main {
   max-width: 768px;
   margin: auto;
+  padding: 1em;
 }
 
 main img {
@@ -74,6 +75,7 @@ td {
 .container {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
 }
 
 .profile {
