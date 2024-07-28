@@ -2,14 +2,23 @@
   <h1>{{ .Title }}</h1>
 
   <div class="badges">
-    <span class="badge race">
-      <img class="badgeimg" src="/img/races/{{ .Params.Race }}.svg" alt="" />
-      {{ .Params.Race }}
-    </span>
-    <span class="badge class">
-      <img class="badgeimg" src="/img/classes/{{ .Params.Class }}.svg" alt="" />
-      {{ .Params.Class }}
-    </span>
+    {{ with .GetTerms "races" }}
+      {{ range . }}
+          <a class="badge race" href="{{ .RelPermalink }}">
+          <img class="badgeimg" src="/img/races/{{ .LinkTitle | lower }}.svg" alt="" />
+          {{ .LinkTitle }}
+          </a>
+      {{ end }}
+    {{ end }}
+
+    {{ with .GetTerms "classes" }}
+      {{ range . }}
+          <a class="badge class" href="{{ .RelPermalink }}">
+          <img class="badgeimg" src="/img/classes/{{ .LinkTitle | lower }}.svg" alt="" />
+          {{ .LinkTitle }}
+          </a>
+      {{ end }}
+    {{ end }}
   </div>
 
   {{ .Content }}

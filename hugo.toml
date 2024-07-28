@@ -5,6 +5,8 @@ title = 'My New Hugo Site'
 [taxonomies]
   tag = 'tags'
   campaign = 'campaigns'
+  class = 'classes'
+  race = 'races'
 
 [module]
   [module.hugoVersion]

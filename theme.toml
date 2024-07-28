@@ -1,28 +1,12 @@
-name = 'Theme name'
+name = 'dnd-hugo'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Theme description'
+licenselink = 'https://github.com/sekthor/dnd-hugo/LICENSE'
+description = 'Theme to document DnD Campaigns'
 
-# The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = 'https://github.com/sekthor/dnd-hugo'
 
-# If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+demosite = 'https://sekthor.github.io/dnd'
 
-
-# If the theme has multiple authors
-authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
-]
-
-# If the theme has a single author
 [author]
-  name = 'Your name'
-  homepage = 'Your website'
-
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'
+  name = 'sekthor'
+  homepage = 'website'

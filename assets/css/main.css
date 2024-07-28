@@ -58,6 +58,7 @@ td {
   font-size: small;
   background-color: maroon;
   color: white;
+  text-decoration: none;
 }
 
 .badge img {
