@@ -71,6 +71,29 @@ td {
   margin: -.25em 0em;
 }
 
+.container {
+  display: flex;
+  gap: 1em;
+}
+
+.profile {
+  width: 100px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  padding: .5em 1em;
+  text-decoration: none;
+  color: #222;
+  text-align: center;
+}
+
+.profileimg {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 /*
 footer {
   border-top: 1px solid #222;

@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <div class="container">
+    {{ range .Pages }}
+    <a class="profile" href="{{ .RelPermalink }}">
+      <img class="profileimg" src="{{ .Title | lower }}/profile.png" alt="">
+      {{ .LinkTitle }}
+    </a>
+    {{ end }}
+  </div>
+{{ end }}
