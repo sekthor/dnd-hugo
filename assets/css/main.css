@@ -43,9 +43,9 @@ table {
   border-collapse: collapse;
 }
 
-td {
+td, th {
   border: 1px solid #ddd;
-  padding: 0.5em 1em;
+  padding: 0.25em .75em;
 }
 
 .badges {
@@ -55,11 +55,16 @@ td {
 
 .badge {
   border-radius: 1.5em;
-  padding: 0.5em 1em;
+  padding: .25em 1em;
   font-size: small;
+  color: #222;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.badge:hover {
   background-color: maroon;
   color: white;
-  text-decoration: none;
 }
 
 .badge img {
