@@ -18,7 +18,7 @@
 
   <h2>Sessions</h2>
   <ul>
-  {{ range where .Pages "Params.type" "session" }}
+  {{ range where .Pages "Type" "sessions" }}
     <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> ({{ .Date | time.Format ":date_long" }})</li>
   {{ end }}
   </ul>
