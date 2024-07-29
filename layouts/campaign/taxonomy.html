@@ -4,14 +4,14 @@
     
   <h2>Played Characters</h2>
   <ul>
-  {{ range where .Pages "Params.type" "pc" }}
+  {{ range where .Pages "Params.CharacterType" "pc" }}
     <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
   {{ end }}
   </ul>
 
   <h2>NPCs</h2>
   <ul>
-  {{ range where .Pages "Params.type" "npc" }}
+  {{ range where .Pages "Params.CharacterType" "npc" }}
     <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
   {{ end }}
   </ul>

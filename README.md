@@ -3,7 +3,7 @@
 ## Features
 
 - *Character pages* 
-    - character (pc / npc)
+    - characterType (pc / npc)
     - class
     - race
     - campaign
