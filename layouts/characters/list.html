@@ -7,7 +7,7 @@
   <div class="container">
     {{ range where .Pages "Params.CharacterType" "pc" }}
     <a class="profile" href="{{ .RelPermalink }}">
-      <img class="profileimg" src="{{ .Title | lower }}/profile.png" alt="">
+      <img class="profileimg" src="{{ .RelPermalink }}/profile.png" alt="">
       {{ .LinkTitle }}
     </a>
     {{ end }}
@@ -18,7 +18,7 @@
   <div class="container">
     {{ range where .Pages "Params.CharacterType" "npc" }}
     <a class="profile" href="{{ .RelPermalink }}">
-      <img class="profileimg" src="{{ .Title | lower }}/profile.png" alt="">
+      <img class="profileimg" src="{{ .RelPermalink }}/profile.png" alt="">
       {{ .LinkTitle }}
     </a>
     {{ end }}
