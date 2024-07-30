@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  <table>
+    <tr><td>Casting Time</td><td>{{ .Params.Castingtime }}</td></tr>
+    <tr><td>Range</td><td>{{ .Params.Range }}</td></tr>
+    <tr><td>Components</td><td>{{ delimit .Params.Components ", " | upper }}</td></tr>
+    <tr><td>Duration</td><td>{{ .Params.Duration }}</td></tr>
+  </table>
+  {{ .Content }}
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
