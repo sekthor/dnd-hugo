@@ -7,6 +7,9 @@ title = 'My New Hugo Site'
   campaign = 'campaigns'
   class = 'classes'
   race = 'races'
+  background = 'backgrounds'
+  alignment = 'alignments'
+  gender = 'genders'
 
 [module]
   [module.hugoVersion]

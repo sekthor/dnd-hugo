@@ -19,6 +19,33 @@
           </a>
       {{ end }}
     {{ end }}
+
+    {{ with .GetTerms "backgrounds" }}
+      {{ range . }}
+          <a class="badge background" href="{{ .RelPermalink }}">
+          <img class="badgeimg" src="/img/classes/{{ .LinkTitle | lower }}.svg" alt="" />
+          {{ .LinkTitle }}
+          </a>
+      {{ end }}
+    {{ end }}
+
+    {{ with .GetTerms "alignments" }}
+      {{ range . }}
+          <a class="badge background" href="{{ .RelPermalink }}">
+          <img class="badgeimg" src="/img/classes/{{ .LinkTitle | lower }}.svg" alt="" />
+          {{ .LinkTitle }}
+          </a>
+      {{ end }}
+    {{ end }}
+
+    {{ with .GetTerms "genders" }}
+      {{ range . }}
+          <a class="badge gender" href="{{ .RelPermalink }}">
+          <img class="badgeimg" src="/img/classes/{{ .LinkTitle | lower }}.svg" alt="" />
+          {{ .LinkTitle }}
+          </a>
+      {{ end }}
+    {{ end }}
   </div>
 
   {{ .Content }}
