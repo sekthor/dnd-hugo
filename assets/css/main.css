@@ -33,12 +33,27 @@ main {
   padding: 1em;
 }
 
+/* content images */
 main img {
   max-width: 50%;
   margin: auto;
   display: block;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+time {
+  margin: 0;
+  font-size: small;
+}
+
+a {
+  color: rgb(200, 75, 0);
+  text-decoration: none;
+}
+
+/* tables */
 table {
   border-collapse: collapse;
 }
@@ -101,9 +116,3 @@ td, th {
   object-fit: cover;
 }
 
-/*
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
-}
-*/
