@@ -27,6 +27,16 @@ header a {
   text-decoration: none;
 }
 
+.toc {
+  float: right;
+  margin: 2em;
+  width: 10em;
+}
+.toc ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
 main {
   max-width: 768px;
   margin: auto;

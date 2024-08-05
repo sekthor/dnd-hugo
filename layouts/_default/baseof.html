@@ -7,6 +7,10 @@
   <header>
     {{ partial "header.html" . }}
   </header>
+  <div class="toc">
+    <strong>Table of Contents</strong>
+    {{ .TableOfContents }}
+  </div>
   <main>
     {{ block "main" . }}{{ end }}
   </main>
