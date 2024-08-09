@@ -6,7 +6,6 @@ characterType: npc #npc/pc
 genders: ""
 classes: []
 races: []
-campaigns: []
 backgrounds: []
 alignments: []
 campaigns: []
