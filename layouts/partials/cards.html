@@ -1,0 +1,10 @@
+
+{{ $pages := .pages }}
+<div class="container">
+    {{ range $pages }}
+    <a class="profile" href="{{ .RelPermalink }}">
+        <img class="profileimg" src="{{ .RelPermalink }}/profile.png" alt="" onerror="if (this.src != '/img/placeholder.png') this.src = '/img/placeholder.png';">
+        {{ .LinkTitle }}
+    </a>
+    {{ end }}
+</div>
