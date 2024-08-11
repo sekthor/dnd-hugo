@@ -24,45 +24,33 @@ It is still a work in progress.
 ## Installation
 
 1. Add the theme
-    ```
-    git add submodule https://github.com/sekthor/dnd-hugo.git themes/dnd-hugo
-    ```
-    or using ssh
-    ```
-    git add submodule git@github.com:sekthor/dnd-hugo.git themes/dnd-hugo
-    ```
+  ```
+  git add submodule https://github.com/sekthor/dnd-hugo.git themes/dnd-hugo
+  ```
 2. use the theme by using
 
 ## Configuration
 
 ## Usage
 
-### Create a Campagin
+- Create a Campagin
+  ```
+  hugo new content campaings/<campaign-name>/_index.md
+  ```
+- Create a character
+  ```
+  hugo new content characters/<character-name>/index.md
+  ```
+- Create a spell
+  ```
+  hugo new content spells/<spell-name>.md
+  ```
 
-```
-hugo new content campaings/<campaign-name>/_index.md
-```
+# Acknowledgements
 
-### Create a character
+## Fonts
 
-```
-hugo new content characters/<character-name>/index.md
-```
-
-In the frontmatter, speficy the `class` and `race`.
-In the characterType, spefcify, if this character is played by a player (`pc`) or is a `npc`.
-
-If you would like to add a picture for your character, place a `profile.png` file in the `characters/<character-name>` folder.
-
-### Create a spell
-
-```
-hugo new content spells/<spell-name>.md
-```
-
-Fill in the front matter to specify
-
-- castingtime
-- range
-- components
-- duration
+- Dwarvish: [Davek](https://www.dafont.com/davek.font)
+- Elvish: [Rellanic](https://www.dafont.com/rellanic.font)
+- Draconic: [Iokharic](https://www.dafont.com/iokharic.font)
+- Abyssal: [Barazhad](https://www.dafont.com/barazhad.font)

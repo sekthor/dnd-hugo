@@ -1,0 +1,39 @@
+@font-face {
+    font-family: dwarvish;
+    src: url(/fonts/davek/Davek.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: elvish;
+    src: url(/fonts/rellanic/Rellanic.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: draconic;
+    src: url(/fonts/iokharic/Iokharic.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: abyssal;
+    src: url(/fonts/barazhad/Barazhad.otf);
+    font-weight: normal;
+}
+
+.dwarvish {
+    font-family: dwarvish;
+}
+
+.elvish {
+    font-family: elvish;
+}
+
+.draconic {
+    font-family: draconic;
+}
+
+.abyssal {
+    font-family: abyssal;
+}
