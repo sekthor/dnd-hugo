@@ -65,6 +65,7 @@ td, th {
 
 .badges {
   display: flex;
+  flex-wrap: wrap;
   gap: .5em;
 }
 
@@ -75,6 +76,7 @@ td, th {
   color: #222;
   text-decoration: none;
   border: 1px solid #ddd;
+  white-space: nowrap;
 }
 
 .badge:hover {
@@ -115,4 +117,3 @@ td, th {
   max-width: 100%;
   object-fit: cover;
 }
-
