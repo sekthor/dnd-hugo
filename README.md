@@ -6,20 +6,12 @@ It is still a work in progress.
 
 ## Features
 
-- Automatic Campaign Pages
-    - extentable with custom content in respective `_index.md`
-    - automatic list of PCs
-    - automatic list of NPCs
-    - automatic list of sessions
-- Session pages for detailed session recaps
-    - campaign
-    - date
-- Character pages
-    - characterType (pc / npc)
-    - class
-    - race
-    - campaign
-- Spell pages
+- Content types
+  - **Campaign Pages** with automatically generated list of appearing characters and NPCs and a list of the campaigns sessions.
+  - **Session pages** for detailed session recaps.
+  - **Character pages** for character descriptions as well as race, class, aligments, ...
+  - **Spell pages** describing spells the characters can use.
+- Fonts for languages (dwarfish, elvish, draconic, abyssal)
 
 ## Installation
 
@@ -27,7 +19,11 @@ It is still a work in progress.
   ```
   git add submodule https://github.com/sekthor/dnd-hugo.git themes/dnd-hugo
   ```
-2. use the theme by using
+
+2. Use the theme
+  ```toml
+  theme = dnd-hugo
+  ```
 
 ## Configuration
 
