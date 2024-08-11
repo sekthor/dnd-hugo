@@ -4,23 +4,12 @@
 
   <h2>PCs</h2>
 
-  <div class="container">
-    {{ range where .Pages "Params.CharacterType" "pc" }}
-    <a class="profile" href="{{ .RelPermalink }}">
-      <img class="profileimg" src="{{ .RelPermalink }}/profile.png" alt="" onerror="if (this.src != '/img/placeholder.png') this.src = '/img/placeholder.png';">
-      {{ .LinkTitle }}
-    </a>
-    {{ end }}
-  </div>
+  {{ $pcs := where .Pages "Params.CharacterType" "pc" }}
+  {{ partial "cards.html" (dict "pages" $pcs) }}
 
   <h2>NPCs</h2>
 
-  <div class="container">
-    {{ range where .Pages "Params.CharacterType" "npc" }}
-    <a class="profile" href="{{ .RelPermalink }}">
-      <img class="profileimg" src="{{ .RelPermalink }}/profile.png" alt="" onerror="if (this.src != '/img/placeholder.png') this.src = '/img/placeholder.png';">
-      {{ .LinkTitle }}
-    </a>
-    {{ end }}
-  </div>
+  {{ $npcs := where .Pages "Params.CharacterType" "npc" }}
+  {{ partial "cards.html" (dict "pages" $npcs) }}
+
 {{ end }}
