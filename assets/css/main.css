@@ -128,7 +128,7 @@ blockquote {
 
 .profile {
   width: 100px;
-  border-radius: 15px;
+  border-radius: 5px;
   border: 1px solid #ddd;
   padding: .5em 1em;
   text-decoration: none;
