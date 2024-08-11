@@ -22,7 +22,7 @@ It is still a work in progress.
 
 2. Use the theme
   ```toml
-  theme = dnd-hugo
+  theme = "dnd-hugo"
   ```
 
 ## Configuration
