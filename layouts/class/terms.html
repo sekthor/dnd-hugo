@@ -1,0 +1,8 @@
+
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ $pages := .Pages }}
+  {{ partial "cards.html" (dict "pages" .Pages "useimagepermalink" true) }}
+{{ end }}
