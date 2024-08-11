@@ -1,15 +1,21 @@
 body {
   color: #222;
-  font-family: sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
   line-height: 1.5;
   margin: 0;
+  background-color: #FFFCFA;
 }
 
 header {
   margin: 0;
-  background-color: maroon;
-  color: #fff;
   padding: .75rem;
+  border-bottom: 1px solid #ddd;
+  background-color: hsla(0, 0%, 100%, .8);
+  -webkit-backdrop-filter: saturate(110%) blur(5px);
+  backdrop-filter: saturate(110%) blur(5px);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 header ul {
@@ -23,7 +29,7 @@ header li {
 }
 
 header a {
-  color: #fff;
+  color: #222;
   text-decoration: none;
 }
 
@@ -39,7 +45,7 @@ header a {
 
 main {
   max-width: 768px;
-  margin: auto;
+  margin: 3em auto;
   padding: 1em;
 }
 
@@ -52,7 +58,14 @@ main img {
 
 h1 {
   margin-bottom: 0;
+  font-weight: normal;
 }
+
+h2, h3, h4 {
+  border-bottom: 1px solid darkorange;
+  font-weight: normal;
+}
+
 time {
   margin: 0;
   font-size: small;
@@ -66,6 +79,8 @@ a {
 /* tables */
 table {
   border-collapse: collapse;
+  background-color: white;
+  width: 100%;
 }
 
 td, th {
@@ -73,8 +88,20 @@ td, th {
   padding: 0.25em .75em;
 }
 
+th {
+  background-color: #ddd;
+  border-bottom: #bbb solid;
+}
+
+blockquote {
+  border: 1px solid #ddd;
+  margin: 0;
+  padding: 0 1em;
+}
+
 .badges {
   display: flex;
+  flex-wrap: wrap;
   gap: .5em;
 }
 
@@ -85,6 +112,7 @@ td, th {
   color: #222;
   text-decoration: none;
   border: 1px solid #ddd;
+  white-space: nowrap;
 }
 
 .badge:hover {
@@ -110,19 +138,26 @@ td, th {
 
 .profile {
   width: 100px;
-  border-radius: 15px;
+  border-radius: 5px;
   border: 1px solid #ddd;
   padding: .5em 1em;
   text-decoration: none;
   color: #222;
   text-align: center;
+  background-color: #fff;
+  line-height: normal;
+  font-size: small;
 }
 
 .profileimg {
   margin: auto;
-  width: 100px;
-  height: 100px;
+  margin-bottom: 0.5em;
+  width: 75px;
+  height: 75px;
   max-width: 100%;
   object-fit: cover;
 }
 
+.profile:hover {
+  box-shadow: 2px 2px 10px #ddd;
+}

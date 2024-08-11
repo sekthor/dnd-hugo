@@ -1,0 +1,25 @@
+{{ $pages := .pages }}
+{{ $useimagepermalink := .useimagepermalink }}
+
+{{ $placeholder := "/img/placeholder.png" }}
+<div class="container">
+    {{ range $pages }}
+        {{ $cardimg := $placeholder }}
+
+        {{ with .Params.Image }}
+            {{ $cardimg = . }}
+        {{ end }}
+
+        {{ if $useimagepermalink }}
+            {{ $cardimg = printf "/img%s.svg" (strings.TrimSuffix "/" .RelPermalink) }}
+        {{ end }}
+
+        <a class="profile" href="{{ .RelPermalink }}">
+            <img class="profileimg"
+                src="{{ $cardimg }}"
+                alt="{{ .Title }}"
+                onerror="if (this.src != '/img/placeholder.png') this.src = '/img/placeholder.png';">
+            {{ .LinkTitle }}
+        </a>
+    {{ end }}
+</div>
