@@ -1,6 +1,6 @@
 # dnd-hugo
 
-This is a hugo theme for documenting dungeons and dragons (DnD) campaigns.
+This is a [hugo](https://gohugo.io) theme for documenting dungeons and dragons (DnD) campaigns.
 
 It is still a work in progress.
 
