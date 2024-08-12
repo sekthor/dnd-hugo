@@ -7,10 +7,16 @@
   <header>
     {{ partial "header.html" . }}
   </header>
-  <div class="toc">
-    <strong>Table of Contents</strong>
-    {{ .TableOfContents }}
-  </div>
+{{ if .IsPage }}
+  {{ with .TableOfContents }}
+    {{ if ne . "<nav id=\"TableOfContents\"></nav>" }}
+      <div class="toc">
+        <strong>Table of Contents</strong>
+        {{ . }}
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}
   <main>
     {{ block "main" . }}{{ end }}
   </main>
