@@ -1,5 +1,16 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
+
+  <div class="badges">
+    {{ with .GetTerms "modes" }}
+      {{ range . }}
+          <a class="badge race" href="{{ .RelPermalink }}">
+          {{ .LinkTitle }}
+          </a>
+      {{ end }}
+    {{ end }}
+  </div>
+
   {{ .Content }}
     
   <h2>Played Characters</h2>
