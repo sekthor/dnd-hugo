@@ -1,7 +1,6 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages }}
-    <p><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></p>
-  {{ end }}
+
+  {{ partial "cards.html" (dict "pages" .Pages) }}
 {{ end }}
