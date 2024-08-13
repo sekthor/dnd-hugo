@@ -1,9 +1,10 @@
 body {
-  color: #222;
-  font-family: Roboto, Helvetica, sans-serif;
+  color: var(--text);
+  font-family: var(--main-font);
   line-height: 1.5;
   margin: 0;
-  background-color: #FFFCFA;
+  background-color: var(--background);
+  background-image: var(--background-image);
 }
 
 header {
@@ -13,7 +14,7 @@ header {
   width: 100%;
   padding: .75rem;
   box-sizing: border-box;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--borders);
   background-color: hsla(0, 0%, 100%, .8);
   -webkit-backdrop-filter: saturate(110%) blur(5px);
   backdrop-filter: saturate(110%) blur(5px);
@@ -30,19 +31,18 @@ header li {
 }
 
 header a {
-  color: #222;
+  color: var(--text);
   text-decoration: none;
 }
 
 .toc {
   position: fixed;
-  right:2em;
+  right: 2em;
   top: 7em;
   padding: 1em;
-  border: 1px solid #ddd;
+  border: 1px solid var(--borders);
   background-color: #fff;
   font-size: smaller;
-  width: 135px;
 }
 
 .toc ul {
@@ -56,6 +56,11 @@ header a {
 
 .toc ul ul {
   padding-left: 1em;
+}
+
+.toc li {
+  width: 100px;
+  text-overflow: ellipsis;
 }
 
 main {
@@ -76,8 +81,10 @@ h1 {
   font-weight: normal;
 }
 
-h2, h3, h4 {
-  border-bottom: 1px solid darkorange;
+h2,
+h3,
+h4 {
+  border-bottom: 1px solid var(--accent);
   font-weight: normal;
   scroll-margin-top: 3em;
 }
@@ -88,24 +95,25 @@ time {
 }
 
 a {
-  color: rgb(200, 75, 0);
+  color: var(--links);
   text-decoration: none;
 }
 
 /* tables */
 table {
   border-collapse: collapse;
-  background-color: white;
+  background-color: var(--table-bg);
   width: 100%;
 }
 
-td, th {
-  border: 1px solid #ddd;
+td,
+th {
+  border: 1px solid var(--borders);
   padding: 0.25em .75em;
 }
 
 th {
-  background-color: #ddd;
+  background-color: var(--table-head-bg);
   border-bottom: #bbb solid;
 }
 
@@ -125,14 +133,14 @@ blockquote {
   border-radius: 1.5em;
   padding: .25em 1em;
   font-size: small;
-  color: #222;
+  color: var(--text);
   text-decoration: none;
-  border: 1px solid #ddd;
+  border: 1px solid var(--borders);
   white-space: nowrap;
 }
 
 .badge:hover {
-  background-color: maroon;
+  background-color: var(--primary);
   color: white;
 }
 
@@ -155,10 +163,10 @@ blockquote {
 .profile {
   width: 100px;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--borders);
   padding: .5em 1em;
   text-decoration: none;
-  color: #222;
+  color: var(--text);
   text-align: center;
   background-color: #fff;
   line-height: normal;
@@ -175,21 +183,24 @@ blockquote {
 }
 
 .profile:hover {
-  box-shadow: 2px 2px 10px #ddd;
+  box-shadow: 2px 2px 10px var(--borders);
 }
 
 @media (max-width: 1100px) {
   main {
     margin-left: 0;
   }
+
   .toc {
     right: 0;
   }
 }
+
 @media (max-width: 950px) {
   main {
     max-width: 100%;
   }
+
   .toc {
     display: none;
   }

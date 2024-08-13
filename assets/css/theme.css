@@ -1,0 +1,15 @@
+:root {
+    --background: #FFFCFA;
+    --primary: maroon;
+    --accent: darkorange;
+    --borders: #ddd;
+    --text: #222;
+    --links: rgb(200, 75, 0);
+
+    --background-image: "";
+    --main-font: Roboto, Helvetica, sans-serif;
+
+    --table-bg: #fff;
+    --table-head-bg: var(--borders);
+    --table-head-bottom: #bbb;
+}
