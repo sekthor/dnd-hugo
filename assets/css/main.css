@@ -161,7 +161,7 @@ blockquote {
 }
 
 .profile {
-  width: 100px;
+  width: 96px;
   border-radius: 5px;
   border: 1px solid var(--borders);
   padding: .5em 1em;

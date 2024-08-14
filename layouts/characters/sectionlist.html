@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+    <h1>{{ .Title }}</h1>
+
+    <div class="badges" style="margin-bottom: 1em;">
+    {{ range .Sections }}
+        <a class="badge" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> 
+    {{ end }}
+    </div>
+
+    {{ $xy := where .Site.RegularPages "Section" "characters" }}
+    {{ partial "cards" (dict "pages" $xy) }}
+
+{{ end }}
